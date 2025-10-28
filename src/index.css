@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* Di sinilah kita mendefinisikan palet warna kustom kita
+  sebagai CSS Variables. Tailwind v4 akan otomatis mendeteksinya.
+*/
+@layer base {
+  :root {
+    /* Palet warna dari permintaan Anda */
+    --color-title: #ff623f;
+    --color-accent: #feaf0c;
+    --color-background: #ffffff;
+    --color-text: #000000;
+
+    /* Warna turunan untuk UI */
+    --color-card-bg: #f9f9f9;
+    --color-border: #e0e0e0;
+    --color-text-secondary: #555;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+  }
+  
+  body {
+    /* Terapkan font dan warna dasar */
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
